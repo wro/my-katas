@@ -4,11 +4,9 @@ import spock.lang.Specification
 
 class FizzBuzzSpec extends Specification {
 
-    def buzz = new FizzBuzz()
-
     def "test"() {
         expect:
-        buzz.execute(value) == expected
+        FizzBuzz.execute(value) == expected
 
         where:
         value | expected
